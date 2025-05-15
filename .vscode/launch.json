@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AirspaceVisualizerApplication<airspace-visualizer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.airspace.AirspaceVisualizerApplication",
+            "projectName": "airspace-visualizer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
