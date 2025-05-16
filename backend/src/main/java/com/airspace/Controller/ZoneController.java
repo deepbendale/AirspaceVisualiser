@@ -1,7 +1,5 @@
 package com.airspace.Controller;
 
-
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -46,8 +44,8 @@ public class ZoneController {
     public ResponseEntity<List<ZoneDto>> getAllZones() {
         List<Zone> zones = zoneService.getAllZones();
         List<ZoneDto> zoneDtos = zones.stream()
-                                      .map(zoneMapper::toDto)
-                                      .collect(Collectors.toList());
+                .map(zoneMapper::toDto)
+                .collect(Collectors.toList());
         return ResponseEntity.ok(zoneDtos);
     }
 }
